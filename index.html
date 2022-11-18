@@ -1,12 +1,189 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Website</title>
-</head>
-<body>
-    <h1>My profile website</h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit officiis, pariatur qui iure quod fugit sint non dolores commodi sapiente est optio in minus laboriosam ipsa dicta, quasi quis.</p>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Profile Website</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<img src="images/logo2.png" class="logo" />
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About Me</a></li>
+						<li><a href="">Portfolio</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="header-text">
+					<p>Web Developer</p>
+					<h1>
+						Hi, I'm <span>Thandile</span><br />
+						from the Eastern Cape,<br />
+						South Africa.
+					</h1>
+				</div>
+			</div>
+		</div>
+		<!----- about ------->
+		<div id="about-me">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/img2.png" alt="Image of Thandile Novuka" />
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+							nulla, aliquam rem voluptas, eos molestias nisi repellat cumque
+							repudiandae provident eum quis cum minus? Suscipit, doloremque
+							consequuntur! Modi, perspiciatis veniam!
+						</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">
+								Skills
+							</p>
+							<p class="tab-links" onclick="opentab('experience')">
+								Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-content active-tab-content" id="skills">
+							<ul>
+								<li>
+									<span>Web Developer</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>Web/App Design</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>Data Engineering</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content" id="experience">
+							<ul>
+								<li>
+									<span>2017 - 2018 </span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>2019-2020</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>2020-current</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content" id="education">
+							<ul>
+								<li>
+									<span>Primary Education</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>Secondary Education</span><br />Lorem ipsum dolor sit
+									amet consectetur adipisicing elit. Commodi ad animi
+									exercitationem laudantium deleniti, similique perspiciatis
+									sapiente mollitia assumenda nostrum! Ipsa dolorem
+									reprehenderit non iusto beatae culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>Tertiary</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+								<li>
+									<span>Certifications</span><br />Lorem ipsum dolor sit amet
+									consectetur adipisicing elit. Commodi ad animi exercitationem
+									laudantium deleniti, similique perspiciatis sapiente mollitia
+									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
+									culpa omnis. Iste, quidem!
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!----about me 2 ------->
+		<div id="about">
+			<div class="container">
+				<h1 class="sub-title sub-about">About Me</h1>
+                <div class="about-list">
+                    <div>
+						<img src="/my-online-profile/icons/school1.png" alt="">
+                        <h2>Education</h2>
+                        <p> <span>Primary 2014-2015</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                        <p> <span>Secondary 2014-2015</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                        <p> <span>Tertiary 2014-2015</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                    </div>
+                    <div>
+						<img src="/my-online-profile/icons/working22.png" alt="">
+                        <h2>Experience</h2>
+                        <p> <span>CCI, South Africa</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                        <p> <span>Amasenti Amahle Enterprises</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>                       
+                    </div>
+                    <div>
+						<img src="/my-online-profile/icons/laptop-screen.png" alt="">
+                        <h2>Skills</h2>
+                        <!----add logo for each type of skill-->
+                        <p> <span>Javascript</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                        <p> <span>HTML</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                        <p> <span>CSS</span><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus tenetur dolorem rem deserunt qui ipsam repudiandae perspiciatis fugiat voluptatum unde voluptates, eveniet omnis veniam facere. Voluptas, quasi officiis. Officiis, impedit!</p>
+                    </div>
+                    
+                </div>
+			</div>
+		</div>
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontent = document.getElementsByClassName("tab-content");
+
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcont of tabcontent) {
+					tabcont.classList.remove("active-tab-content");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab-content");
+			}
+		</script>
+	</body>
 </html>
