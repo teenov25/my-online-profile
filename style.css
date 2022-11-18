@@ -15,7 +15,7 @@ body{
     background-position: center;
 }
 .containter{
-    padding: 15px 15%;
+    padding: 15px 10%;
 }
 nav{
     display: flex;
@@ -24,7 +24,8 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
+    width: 200px;
+    margin-top: 0%;
     
 }
 nav ul li{
@@ -91,47 +92,10 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #fff;
 }
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #D94B4B;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 100%;
-}
-.tab-content ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-content ul li span{
-    color: #D94B4B;
-    font-size: 14px;
-}
-.tab-content{
-    display: none;
-}
-.tab-content.active-tab-content{
-    display: block;
-}
 /*----about me 2-----*/
 #about{
-    padding: 30px 0;
+    padding: 60px 0;
+    margin: auto;
     
 }
 .about-list{
@@ -174,5 +138,33 @@ nav ul li a:hover::after{
     font-weight: 300;
 }
 .sub-title.sub-about{
-    margin-left: 35%;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+/*------ contact ------*/
+
+.contact-left{
+    flex-basis: 60%;
+}
+.contact-right{
+    flex-basis: 35%;
+}
+.contact-right p{
+    font-size: 14px;
+    margin-top: 30px;
+}
+.contact-right p img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.media-icons{
+    display: inline-flex;
+    padding: 20px 0;
+}
+.media-icons img{
+    margin: 15px;
+    width: 30px;
+    height: 30px;
 }

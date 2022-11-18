@@ -45,105 +45,12 @@
 							consequuntur! Modi, perspiciatis veniam!
 						</p>
 
-						<div class="tab-titles">
-							<p class="tab-links active-link" onclick="opentab('skills')">
-								Skills
-							</p>
-							<p class="tab-links" onclick="opentab('experience')">
-								Experience
-							</p>
-							<p class="tab-links" onclick="opentab('education')">Education</p>
-						</div>
-						<div class="tab-content active-tab-content" id="skills">
-							<ul>
-								<li>
-									<span>Web Developer</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>Web/App Design</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>Data Engineering</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-							</ul>
-						</div>
-						<div class="tab-content" id="experience">
-							<ul>
-								<li>
-									<span>2017 - 2018 </span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>2019-2020</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>2020-current</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-							</ul>
-						</div>
-						<div class="tab-content" id="education">
-							<ul>
-								<li>
-									<span>Primary Education</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>Secondary Education</span><br />Lorem ipsum dolor sit
-									amet consectetur adipisicing elit. Commodi ad animi
-									exercitationem laudantium deleniti, similique perspiciatis
-									sapiente mollitia assumenda nostrum! Ipsa dolorem
-									reprehenderit non iusto beatae culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>Tertiary</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-								<li>
-									<span>Certifications</span><br />Lorem ipsum dolor sit amet
-									consectetur adipisicing elit. Commodi ad animi exercitationem
-									laudantium deleniti, similique perspiciatis sapiente mollitia
-									assumenda nostrum! Ipsa dolorem reprehenderit non iusto beatae
-									culpa omnis. Iste, quidem!
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<!----about me 2 ------->
+				<!----about me 2 ------->
 		<div id="about">
 			<div class="container">
-				<h1 class="sub-title sub-about">About Me</h1>
+				<h1 class="sub-title sub-about">more about me...</h1>
                 <div class="about-list">
                     <div>
 						<img src="/my-online-profile/icons/school1.png" alt="">
@@ -170,20 +77,27 @@
                 </div>
 			</div>
 		</div>
-		<script>
-			var tablinks = document.getElementsByClassName("tab-links");
-			var tabcontent = document.getElementsByClassName("tab-content");
-
-			function opentab(tabname) {
-				for (tablink of tablinks) {
-					tablink.classList.remove("active-link");
-				}
-				for (tabcont of tabcontent) {
-					tabcont.classList.remove("active-tab-content");
-				}
-				event.currentTarget.classList.add("active-link");
-				document.getElementById(tabname).classList.add("active-tab-content");
-			}
-		</script>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="container">
+				<h2 class="sub-title">Get in touch</h2>
+				<div class="row">
+					<div class="contact-left header-text">
+						<h1>do you want to get in <span>touch?</span> </h1>
+					</div>
+					<div class="contact-right">
+						<h2 class="sub-title sub-about">Contact Me</h2>
+						<p><img src="/my-online-profile/icons/email.png" alt=""> Thandile Novuka</p>
+						<p><img src="/my-online-profile/icons/phone-call.png" alt=""> Thandile Novuka</p>
+						<div class="media-icons">
+							<a href=""><img src="/my-online-profile/icons/facebook (1).png" alt=""></a>
+							<a href=""><img src="/my-online-profile/icons/instagram.png" alt=""></a>
+							<a href=""><img src="/my-online-profile/icons/linkedin.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
