@@ -5,14 +5,22 @@
     box-sizing:border-box;
 }
 body{
+    margin: 20px;
     background: #090505;
     color: #fff;
+    background-size: 400px;
+   
 }
 #header{
     width: 100%;
-    height: 100vh;
+    height: 85%;
+    background-image: url(https://assets.objkt.media/file/assets-003/QmbGRMzr3WdgrWv2DocDuQjSa8sQayTMbqvgSEouxh1WQw/artifact);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-position: fixed, center;
     background-size: cover;
-    background-position: center;
+    border-radius: 10px;
+    padding: 0%;
 }
 .containter{
     padding: 15px 10%;
@@ -22,29 +30,33 @@ nav{
     align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 15%;
+    margin-bottom: 50px;
+    
 }
 .logo{
     width: 200px;
-    margin-top: 0%;
-    
+    margin-left: 2%;
+    height: fit-content;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 nav ul li a{
     text-decoration:none;
     color: #fff;
-    font-size: 18px;
+    font-size: 30px;
     position: relative;
 
 }
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
-    background: #D94B4B;
+    height: 7px;
+    background: #ff0000;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -54,22 +66,33 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    
     font-size: 25px;
+    position: relative;
+    text-align: center;
 }
 .header-text h1{
-    margin-top:  20px;
+    margin:  20px;
     font-size: 50px;
+    padding: 50px;
+    
 
 }
 .header-text h1 span{
-    color: #D94B4B;
+    color: #ff0000;
+}
+.header-text-title-span{
+    
+    font-size: 35px;
+    text-align: center;
+    
 }
 /* -------- about --------*/
 
 #about-me{
     padding: 80px 0;
     color: #ababab;
+    margin: 0;
 }
 .row{
     display: flex;
@@ -82,7 +105,8 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 10px;
-    background-color: #ababab; 
+    background-color: #eb3f3f; 
+    flex-basis: 55%;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -91,80 +115,230 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    margin: auto;
+    text-align: center;
 }
 /*----about me 2-----*/
-#about{
-    padding: 60px 0;
-    margin: auto;
+.flex-container{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.flex-container .h2-flex{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 10px 40 10px;
+    padding: 30px;
+    
+    
     
 }
-.about-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.about-list span{
-    color: #D94B4B;
-}
-.about-list div{
+.flex-container div{
     padding:40px 10px;
-    background: #2f2e2e;
+    background: #3636365d;
+    border: 1px solid rgb(66, 66, 66);
+    box-shadow: 5px 10px 8px #ad5656;
     border-radius: 10px;
-    display: inline-block;
-    overflow: auto;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 300;
 }
-.about-list div img{
+.flex-container div img{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    margin-top: 10px;
     display: block;
     height: 70px;
     width: 70px;
 }
-.about-list div h2{
+.flex-container div h2{
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
     
 }
-.about-list div p{
-    margin: 12px 2px;
-    font-weight: 300;
+.flex-container .item-3{
+    display: flex;
+    padding-bottom: 5px;
+    flex-direction: row;
+    flex-grow: 2;
+    position: relative;
+    gap: 80px;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
 }
-.sub-title.sub-about{
-    font-size: 30px;
-    margin-top: 100px;
+
+.item-1{
+    flex-basis: 50%;
+    flex-grow: 3;
+}
+.item-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.flex-container span{
+    color: #D94B4B;
+    justify-content: space-around;
 }
 
 /*------ contact ------*/
+#contact{
+    margin-top: 100px;
+}
 
 .contact-left{
-    flex-basis: 60%;
+    flex-basis: 45%;
+    padding: 15px;
+}
+.contact-left.header-text{
+margin: 15px;
+
 }
 .contact-right{
-    flex-basis: 35%;
+    flex-basis: 40%;
+    text-align: center;
+    align-items: center;
 }
 .contact-right p{
     font-size: 14px;
-    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .contact-right p img{
     width: 20px;
     height: 20px;
-    margin-right: 15px;
+    margin: 15px auto 5px;
+    
 }
 .media-icons{
     display: inline-flex;
-    padding: 20px 0;
+    padding: 20px 14px;
 }
 .media-icons img{
     margin: 15px;
     width: 30px;
     height: 30px;
 }
+.btn{
+    background: #e32929;
+    border-radius: 6px;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+}
+.contact-left a{
+   align-items: flex-end;
+}
+form{
+    background:#e32929;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0px;
+    padding: 10px;
+    outline: none;
+    background: #f5f5f5;
+}
+ form button{
+    padding: 10px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+ }
+/*------profile-----*/
+.profile-title{
+    text-align: center;
+    margin: 0 10px 30 10px;
+    padding: 30px;
+}
+
+.profile-row-list{
+    padding: 100px;
+    display: grid;
+    background:#3636365d;
+    border: 2px solid rgb(66, 66, 66);
+    box-shadow: 5px 3px 4px #ad5656;
+    border-radius: 10px;
+}
+.profile-row{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 45px;
+    display: block;
+}
+.row-1{
+    padding: 0;
+    margin: 20px 0;
+    display: inline-flex;
+    grid-gap: 20px;
+}
+.row-2{
+    background-image: url(https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    border:2px solid #ad5656;
+}
+.row-3{
+    background-image: url(https://images.pexels.com/photos/9072394/pexels-photo-9072394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    border:2px solid #ad5656;
+}
+
+.porfile-col-1{
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    background-image: url(https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    flex-basis: 50%;
+    text-align: center;
+    padding: 45px;
+    border:2px solid #ad5656;
+    border-radius: 10px;
+}
+.porfile-col-2{
+    background-image: url(https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 45px;
+    border:2px solid #ad5656;
+    border-radius: 10px;
+}
+/*------About-me 2 Flexbox-----*/
