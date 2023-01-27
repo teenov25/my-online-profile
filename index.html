@@ -105,7 +105,7 @@
 					</div>
 					<div class="contact-right">
 						<h2 class="sub-title sub-about">Contact Me</h2>
-						<form action="" onsubmit="sendEmail(); reset(); return false;">
+						<form onsubmit="sendEmail(); reset(); return false;">
 							<input type="text" id = "name" placeholder="Your Name" required>
 							<input type="email" id = "email" placeholder="Your Email" required>
 							<input type="text" id = "phone" placeholder="Your Mobile Number" required>
@@ -128,16 +128,14 @@
 		<script>
 			function sendEmail(){
 				Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "thandilenovuka23@gmail.com",
-    Password : "CDDE28C4D634C07B067361919C2BC0BD51E0",
-    To : 'thandilenovuka23@gmail.com',
-    From : document.getElementById("email").value,
+    SecureToken : "8f21b687-197a-4fa2-aada-6536f7300247",
+    To : 'tobey.bookingsinfo@gmail.com',
+    From : 'thandilenovuka23@gmail.com',
     Subject : "New Contact Form Enquiry",
     Body : "Name :" + document.getElementById("name").value + 
 			"<br> Email :" + document.getElementById("email").value +	
 			"<br> Phone Number :" + document.getElementById("phone").value +
-			"<br> Message :" + document.getElementById("message").value,	
+			"<br> Message :" + document.getElementById("message").value	
 }).then(
   message => alert("Message Sent Succesfully")
 );
