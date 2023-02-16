@@ -1,124 +1,135 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
-    box-sizing:border-box;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
-body{
-    margin: 20px;
+
+body {
+    margin: 0 20px;
     background: #090505;
     color: #fff;
     background-size: 400px;
-   
 }
-#header{
-    width: 100%;
-    height: 85%;
+
+#header {
+
     background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
-    background-position: fixed, center;
     background-size: cover;
     border-radius: 10px;
-    padding: 0%;
+    padding: 190px;
 }
-.containter{
+
+.containter {
     padding: 15px 10%;
 }
-nav{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 15%;
-    margin-bottom: 50px;
-    
-}
-.logo{
-    width: 200px;
-    margin-left: 2%;
-    height: fit-content;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    
-}
-nav ul li a{
-    text-decoration:none;
-    color: #fff;
-    font-size: 30px;
-    position: relative;
+
+nav {
+    height: 100%;
+    width: 50px;
+    position: sticky;
+    top: 0px;
 
 }
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 7px;
-    background: #ff0000;
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0 400px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.724);
+    border-top: 1px solid rgba(255, 225, 225, 0.197);
+    border-bottom: 1px solid rgb(255, 225, 225, 0.197);
+    border-radius: 5px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 23px;
+    border-radius: 5px;
+
+}
+
+nav ul li a:hover {
+    background-color: #e32929;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    width: 220px;
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
 }
-nav ul li a:hover::after{
-    width: 100%;
-}
-.header-text{
-    
+
+.header-text {
+
     font-size: 25px;
-    position: relative;
     text-align: center;
 }
-.header-text h1{
-    margin:  20px;
+
+.header-text h1 {
+    margin: 3px 20px;
     font-size: 50px;
-    padding: 50px;
-    
+    padding: 0;
+
 
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #ff0000;
 }
-.header-text-title-span{
-    
+
+.header-text-title-span {
+
     font-size: 35px;
     text-align: center;
-    
+
 }
+
 /* -------- about --------*/
 
-#about-me{
+#about-me {
     padding: 80px 0;
     color: #ababab;
     margin: 0;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-col-1{
+
+
+
+.about-col-1 {
     flex-basis: 35%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
     border-radius: 10px;
-    background-color: #eb3f3f; 
+    background-color: #eb3f3f;
     flex-basis: 55%;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 60%;
 }
-.sub-title{
+
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
     margin: auto;
     text-align: center;
 }
+
 /*----about me 2-----*/
-.flex-container{
+.flex-container {
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -130,19 +141,21 @@ nav ul li a:hover::after{
     flex-wrap: nowrap;
     text-align: center;
 }
-.flex-container .h2-flex{
+
+.flex-container .h2-flex {
     position: absolute;
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     margin: 0 10px 40 10px;
     padding: 30px;
-    
-    
-    
+
+
+
 }
-.flex-container div{
-    padding:40px 10px;
+
+.flex-container div {
+    padding: 40px 10px;
     background: #3636365d;
     border: 1px solid rgb(66, 66, 66);
     box-shadow: 5px 10px 8px #ad5656;
@@ -152,7 +165,8 @@ nav ul li a:hover::after{
     font-size: 15px;
     font-weight: 300;
 }
-.flex-container div img{
+
+.flex-container div img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -161,78 +175,97 @@ nav ul li a:hover::after{
     height: 70px;
     width: 70px;
 }
-.flex-container div h2{
+
+.flex-container div h2 {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
-    
+
 }
-.flex-container .item-3{
+
+.flex-container .item-3 {
     display: flex;
     padding-bottom: 5px;
     flex-direction: row;
     flex-grow: 2;
-    position: relative;
+    position: static;
     gap: 80px;
     margin-bottom: 5px;
     text-align: center;
     justify-content: center;
 }
 
-.item-1{
+.item-1 {
     flex-basis: 50%;
     flex-grow: 3;
 }
-.item-2{
+
+.item-2 {
     flex-basis: 50%;
     flex-grow: 1;
 }
-.flex-container span{
+
+.flex-container span {
     color: #D94B4B;
     justify-content: space-around;
 }
 
 /*------ contact ------*/
-#contact{
+#contact {
+    display: flex;
     margin-top: 100px;
 }
 
-.contact-left{
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 60px 0px;
+}
+
+.contact-left {
     flex-basis: 45%;
     padding: 15px;
 }
-.contact-left.header-text{
-margin: 15px;
+
+.contact-left.header-text {
+    margin: 15px;
 
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 40%;
     text-align: center;
     align-items: center;
 }
-.contact-right p{
+
+.contact-right p {
     font-size: 14px;
     padding: 5px;
     display: flex;
     flex-direction: column;
 }
-.contact-right p img{
+
+.contact-right p img {
     width: 20px;
     height: 20px;
     margin: 15px auto 5px;
-    
+
 }
-.media-icons{
+
+.media-icons {
     display: inline-flex;
     padding: 20px 14px;
 }
-.media-icons img{
+
+.media-icons img {
     margin: 15px;
     width: 30px;
     height: 30px;
 }
-.btn{
+
+.btn {
     background: #e32929;
     border-radius: 6px;
     margin: 50px auto;
@@ -244,11 +277,13 @@ margin: 15px;
     font-size: 18px;
 
 }
-.contact-left a{
-   align-items: flex-end;
+
+.contact-left a {
+    align-items: flex-end;
 }
-form{
-    background:#e32929;
+
+form {
+    background: #e32929;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -256,14 +291,17 @@ form{
     max-width: 600px;
     border-radius: 10px;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     border: 0;
     margin: 10px 0px;
     padding: 10px;
     outline: none;
     background: #f5f5f5;
 }
- form button{
+
+form button {
     padding: 10px;
     background: #ffffff;
     color: #000000;
@@ -274,51 +312,56 @@ form input, form textarea{
     cursor: pointer;
     width: 150px;
     margin: 20px auto 0;
- }
-/*------profile-----*/
-.profile-title{
-    text-align: center;
-    margin: 0 10px 30 10px;
-    padding: 30px;
 }
 
-.profile-row-list{
+/*------profile-----*/
+.profile-title {
+    text-align: center;
+    margin: 0 10px 30 10px;
+    padding: 60px 30px 30px;
+}
+
+.profile-row-list {
     padding: 100px;
     display: grid;
-    background:#3636365d;
+    background: #3636365d;
     border: 2px solid rgb(66, 66, 66);
     box-shadow: 5px 3px 4px #ad5656;
     border-radius: 10px;
 }
-.profile-row{
+
+.profile-row {
     margin: 20px 0;
     text-align: center;
     font-size: 60px;
     color: #ffffff;
     border-radius: 10px;
     padding: 45px;
-    
+
 }
-.row-1{
+
+.row-1 {
     padding: 0;
     margin: 20px 0;
     display: inline-flex;
     grid-gap: 20px;
 }
-.row-2{
+
+.row-2 {
     background-image: url(https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-size: cover;
     background-position: center;
-    border:2px solid #ad5656;
+    border: 2px solid #ad5656;
 }
-.row-3{
+
+.row-3 {
     background-image: url(https://images.pexels.com/photos/9072394/pexels-photo-9072394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-size: cover;
     background-position: center;
-    border:2px solid #ad5656;
+    border: 2px solid #ad5656;
 }
 
-.porfile-col-1{
+.porfile-col-1 {
     background-size: cover;
     background-position: center;
     display: grid;
@@ -326,10 +369,11 @@ form input, form textarea{
     flex-basis: 50%;
     text-align: center;
     padding: 45px;
-    border:2px solid #ad5656;
+    border: 2px solid #ad5656;
     border-radius: 10px;
 }
-.porfile-col-2{
+
+.porfile-col-2 {
     background-image: url(https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: cover;
     background-position: center;
@@ -337,7 +381,6 @@ form input, form textarea{
     flex-basis: 50%;
     text-align: center;
     padding: 45px;
-    border:2px solid #ad5656;
+    border: 2px solid #ad5656;
     border-radius: 10px;
 }
-
