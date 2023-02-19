@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 20px;
     background: #090505;
@@ -27,7 +31,7 @@ body {
 
 nav {
     height: 100%;
-    width: 50px;
+    width: 100%;
     position: sticky;
     top: 0px;
 
@@ -36,7 +40,7 @@ nav {
 nav ul {
     display: flex;
     margin: 0;
-    padding: 0 400px;
+    padding: 0 220px;
     float: left;
     background-color: rgba(0, 0, 0, 0.724);
     border-top: 1px solid rgba(255, 225, 225, 0.197);
@@ -120,6 +124,11 @@ nav ul li a:hover {
     flex-basis: 60%;
 }
 
+.about-col-2 p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
 .sub-title {
     font-size: 60px;
     font-weight: 600;
@@ -186,14 +195,39 @@ nav ul li a:hover {
 
 .flex-container .item-3 {
     display: flex;
-    padding-bottom: 5px;
     flex-direction: row;
     flex-grow: 2;
     position: static;
-    gap: 80px;
-    margin-bottom: 5px;
-    text-align: center;
-    justify-content: center;
+    gap: 50px;
+
+    margin: 5rem 0 auto;
+    flex-wrap: wrap;
+}
+
+.item-3 p {
+    margin: 0 6rem;
+    padding-left: 20px;
+
+}
+
+.item-3 h6 {
+    margin: 0 auto;
+    font-size: 15px;
+
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.item-3 .label1 {
+    margin-left: 105px;
+}
+
+.item-3 .label2 {
+    margin-left: 70px;
+}
+
+.item-3 .label3 {
+    margin-left: 30px;
 }
 
 .item-1 {
@@ -201,14 +235,25 @@ nav ul li a:hover {
     flex-grow: 3;
 }
 
+.item-1 p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
 .item-2 {
     flex-basis: 50%;
     flex-grow: 1;
 }
 
+.item-2 p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
 .flex-container span {
+    line-height: 30px;
     color: #D94B4B;
-    justify-content: space-around;
+    text-decoration: underline;
 }
 
 /*------ contact ------*/
