@@ -17,7 +17,6 @@ body {
 }
 
 #header {
-
     background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +33,6 @@ nav {
     width: 100%;
     position: sticky;
     top: 0px;
-
 }
 
 nav ul {
@@ -60,7 +58,6 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 23px;
     border-radius: 5px;
-
 }
 
 nav ul li a:hover {
@@ -84,8 +81,6 @@ nav ul li a:hover {
     margin: 3px 20px;
     font-size: 50px;
     padding: 0;
-
-
 }
 
 .header-text h1 span {
@@ -93,21 +88,16 @@ nav ul li a:hover {
 }
 
 .header-text-title-span {
-
     font-size: 35px;
     text-align: center;
-
 }
 
 /* -------- about --------*/
-
 #about-me {
     padding: 80px 0;
     color: #ababab;
     margin: 0;
 }
-
-
 
 .about-col-1 {
     flex-basis: 35%;
@@ -158,9 +148,6 @@ nav ul li a:hover {
     font-weight: 500;
     margin: 0 10px 40 10px;
     padding: 30px;
-
-
-
 }
 
 .flex-container div {
@@ -175,7 +162,8 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
-.flex-container div img {
+.flex-container img {
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -200,30 +188,20 @@ nav ul li a:hover {
     position: static;
     margin: 5rem 0 auto;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .item-3 p {
-    margin: 0 6rem;
-    padding-left: 40px;
-
+    vertical-align: bottom;
+    display: inline-block;
+    text-align: center;
+    width: 0px;
+    padding: 0 0 0 8rem;
 }
 
 .item-3 h6 {
-    margin: 0 auto;
+    display: block;
     font-size: 15px;
-    padding: 3px;
-}
-
-.item-3 .label1 {
-    margin-left: 130px;
-}
-
-.item-3 .label2 {
-    margin-left: 50px;
-}
-
-.item-3 .label3 {
-    margin-left: 0;
 }
 
 .item-1 {
