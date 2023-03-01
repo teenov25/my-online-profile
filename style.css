@@ -38,12 +38,12 @@ nav {
 nav ul {
     display: flex;
     margin: 0;
-    padding: 0 220px;
-    float: left;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.724);
     border-top: 1px solid rgba(255, 225, 225, 0.197);
     border-bottom: 1px solid rgb(255, 225, 225, 0.197);
     border-radius: 5px;
+    justify-content: center;
 }
 
 nav ul li {
@@ -178,29 +178,23 @@ nav ul li a:hover {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
-
 }
 
-.flex-container .item-3 {
+.item-3 {
     display: flex;
-    flex-direction: row;
     flex-grow: 2;
-    position: static;
-    margin: 5rem 0 auto;
-    flex-wrap: wrap;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
 }
 
-.item-3 p {
-    vertical-align: bottom;
-    display: inline-block;
-    text-align: center;
-    width: 0px;
-    padding: 0 0 0 11.5rem;
+.item-3 section {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item-3 h6 {
-    display: block;
     font-size: 15px;
 }
 
@@ -342,72 +336,8 @@ form button {
 
 .profile-row-list {
     padding: 100px;
-    display: grid;
     background: #3636365d;
     border: 2px solid rgb(66, 66, 66);
     box-shadow: 5px 3px 4px #ad5656;
-    border-radius: 10px;
-}
-
-.profile-row-list h3 {
-
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1px;
-    margin: 50px;
-    border-radius: 5px;
-}
-
-.profile-row {
-    margin: 20px 0;
-    text-align: center;
-    font-size: 60px;
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 45px;
-
-}
-
-.row-1 {
-    padding: 0;
-    margin: 20px 0;
-    display: inline-flex;
-    grid-gap: 20px;
-}
-
-.row-2 {
-    background-image: url(https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #ad5656;
-}
-
-.row-3 {
-    background-image: url(https://images.pexels.com/photos/9072394/pexels-photo-9072394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #ad5656;
-}
-
-.porfile-col-1 {
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    background-image: url(https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    flex-basis: 50%;
-    text-align: center;
-    padding: 45px;
-    border: 2px solid #ad5656;
-    border-radius: 10px;
-}
-
-.porfile-col-2 {
-    background-image: url(https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600);
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    flex-basis: 50%;
-    text-align: center;
-    padding: 45px;
-    border: 2px solid #ad5656;
     border-radius: 10px;
 }
