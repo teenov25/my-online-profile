@@ -125,7 +125,7 @@
     }
   }
 
-.flex-container img {
+.row img {
 
     margin-left: auto;
     margin-right: auto;
@@ -193,8 +193,15 @@
 }
 
 .row {
-    justify-content: space-evenly;
-    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    text-align: center;
+    
 }
 
 .contact-left {
