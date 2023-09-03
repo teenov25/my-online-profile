@@ -7,12 +7,20 @@
     box-sizing: border-box;
 }
 
+/* header */
+.head-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 15%;
+}
+
 #header {
     background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 14%;
 }
+
+/* logo */
 .logo {
     display: inline-block;
     margin-left: 30px;
@@ -20,9 +28,11 @@
     width: 110px;
 }
 
-.navbar{
+.navbar {
+    display: grid;
     font-size: 18px;
 }
+
 .checkbtn {
     font-size: 30px;
     color: #ff0000;
@@ -58,28 +68,31 @@
 
 /* -------- about --------*/
 #about-me {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     color: #ababab;
     margin: 0;
     margin-top: 200px;
     font-size: 18px;
 }
 
+.about-me-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
 .about-col-1 {
-    flex-basis: 35%;
+    margin: auto;
+    padding: 0 20% 20% 20%;
 }
 
 .about-col-1 img {
     width: 100%;
     border-radius: 10px;
     background-color: #eb3f3f;
-    flex-basis: 55%;
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    padding: 0 20px 20px 20px;
 }
 
 .about-col-2 p {
@@ -97,18 +110,16 @@
 
 /*----about me 2-----*/
 .flex-container {
-    display: flex;
-    flex-direction: row;
+    padding: 30px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
     gap: 10px;
-    margin-top: 50px;
-    margin-bottom: 0;
-    flex-wrap: nowrap;
     text-align: center;
 }
 
 .flex-container div {
-    padding: 40px 10px;
     margin: 20px 0px 10px;
     background: rgb(0 0 0 / 37%);
     border: 1px solid rgb(66, 66, 66);
@@ -116,16 +127,25 @@
     font-size: 15px;
     font-weight: 300;
 }
-@media screen and (max-width: 400px) {
-    .flex-container{
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 20px 0;
-        justify-content: space-between;
-    }
-  }
 
-.row img {
+@media screen and (max-width: 689px) {
+    .about-me-container {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flex-container {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+
+    .item-3 {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+}
+
+.flex-container img {
 
     margin-left: auto;
     margin-right: auto;
@@ -144,39 +164,31 @@
 }
 
 .item-3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    line-height: 18px;
-    justify-content: center;
-
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 20vh;
+    align-items: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
 }
 
+.item-3 h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 15px 10px;
+}
 
 .item-3 h6 {
     font-size: 18px;
-}
-
-.item-1,
-.item-2 {
-    display: flex;
-    flex-direction: column;
 }
 
 .item-1 p,
 .item-2 p {
     font-size: 18px;
     line-height: 28px;
-
 }
 
 .flex-container span {
@@ -186,27 +198,15 @@
 }
 
 /*------ contact ------*/
-#contact {
-    display: flex;
-    margin-top: 100px;
-    justify-content: center;
-}
 
-.row {
+.contact {
     display: grid;
-    grid-template-columns: 100px auto;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 50px;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-    text-align: center;
-    
+    grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .contact-left {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     flex-basis: 45%;
     padding: 15px;
     align-items: center;
@@ -218,6 +218,7 @@
     flex-basis: 40%;
     text-align: center;
     align-items: center;
+    justify-content: space-around;
 }
 
 .contact-right p {
