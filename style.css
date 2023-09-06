@@ -5,6 +5,8 @@
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
+    scroll-margin: 0;
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -12,14 +14,31 @@
     display: grid;
     grid-template-columns: auto;
     padding: 15%;
+    position: relative;
 }
 
 #header {
     background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    margin-top: 0;
 }
-
+.anchor{
+    display: block;
+    height: 115px;
+    margin-top: -115px;
+    visibility: hidden;
+}
+section{
+    scroll-margin-top:155px ;
+}
+ #contact,#profile, #about-me-2{
+    scroll-margin-top:50px
+}
+#skills{
+    scroll-margin-top:60px
+}
 /* logo */
 .logo {
     display: inline-block;
@@ -27,7 +46,6 @@
     margin-top: 15px;
     width: 110px;
 }
-
 .navbar {
     display: grid;
     font-size: 18px;
@@ -133,15 +151,29 @@
         text-align: center;
         padding: 20px;
     }
+    #contact {
+        scroll-margin-top: 240px;
+    }
+    #profile{
+        scroll-margin-top: 200px 
+    }
+    #about-me, #about-me-2, #skills{
+        scroll-margin-top: 360px 
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .flex-container {
-        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    .flex-container ,.about-me-container,.item-3{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-
-    .item-3 {
-        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    .sub-about{
+        font-size: 40px;
+    }
+    section{
+        scroll-margin-top:185px ;
+    }
+    #contact{
+        padding-top: 30px;
     }
 }
 
