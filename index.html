@@ -24,34 +24,33 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto text-center mb-0 mb-lg-0">
-			  <li class="nav-item"><a href="#header" style="text-decoration: none;" >
-				<span class="nav-link active" aria-current="page" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</span>
-			  </a>
+			  <li class="nav-item js-scroll-trigger"><a class="nav-link active" href="#header" aria-current="page" style="text-decoration: none;" >
+			<span>Home</span></a>
 			  </li>
-			  <li class="nav-item dropdown">
+			  <li class="dropdown">
 				<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				  About Me
 				</a>
 				<ul class="dropdown-menu bg-danger text-center">
-					<li  class="dropdown-item"   data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a href="#about-me" style="text-decoration: none;"><span>About Me</span></a></li>
-					<li  class="dropdown-item"   data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a href="#about-me-2" style="text-decoration: none;"><span>Experience & Education</span></a></li>
-				 <li  class="dropdown-item"   data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a href="#skills" style="text-decoration: none;"><span>Skills</span></a></li> 
+					<li  class="dropdown-item nav-item"><a href="#about-me" style="text-decoration: none;"><span>About Me</span></a></li>
+					<li  class="dropdown-item nav-item"><a href="#about-me-2" style="text-decoration: none;"><span>Experience & Education</span></a></li>
+				 <li  class="dropdown-item nav-item"><a href="#skills" style="text-decoration: none;"><span>Skills</span></a></li> 
 				</ul>
 			  </li>
 
 			 <li class="nav-item"> <a href="#profile" style="text-decoration: none;">
-				<span class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Profile</span>
+				<span class="nav-link">Profile</span>
 			  </a>
 			  </li>
 			  <li class="nav-item"><a href="#contact" style="text-decoration: none;">
-				<span class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Contact</span>
+				<span class="nav-link">Contact</span>
 			  </a>
 			  </li>
 			</ul>
 		  </div>
 		</div>
 	  </nav>
-<section data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"> 
+
 	<section id="header">
 		<div class=" head-container">
 			<div class="header-text">
@@ -214,7 +213,7 @@
 			</div>
 		
 	</section>
-</section>
+
 	
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
@@ -234,9 +233,13 @@
 					"<br> Message :" +
 					document.getElementById("message").value,
 			}).then((message) => alert("Message Sent Succesfully"));
-		}
-
-		
+		};
+		const navlinks = document.querySelectorAll('.nav-item');
+		const menuToggle = document.getElementById('navbarSupportedContent');
+		const bsCollapse = new bootstrap.Collapse(menuToggle);
+		navlinks.forEach((i)=>{
+			i.addEventListener('click',()=>{bsCollapse.toggle()})
+		})
 	</script>
 </body>
 
