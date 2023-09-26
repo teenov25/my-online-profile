@@ -243,39 +243,58 @@
     const navItems = document.querySelectorAll('.nav-item');
     const navbarToggler = document.querySelector('.navbar-toggler');
 
+    // Function to close the navbar when clicking outside of it
     function closeNavbarOnClickOutside(event) {
         if (navbarCollapse.classList.contains('show')) {
-            navbarToggler.click();
+            navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
         }
     }
 
+    // Attach a click event listener to the document to close the navbar on click outside
     document.addEventListener('click', closeNavbarOnClickOutside);
 
+    // Function to close the navbar when a navigation item is clicked
     function closeNavbarOnClickNavItem() {
         if (navbarCollapse.classList.contains('show')) {
-            navbarToggler.click();
+            navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
         }
     }
 
+    // Attach click event listeners to all navigation items
     navItems.forEach(function (navItem) {
         navItem.addEventListener('click', closeNavbarOnClickNavItem);
     });
 
+    // Prevent the "About Me" dropdown from closing the navbar
     aboutMeDropdown.addEventListener('click', function (e) {
-        e.stopPropagation();
+        e.stopPropagation(); // Prevent the click event from propagating to close the navbar
     });
-   
+
+    // Function to close the dropdown and navbar when a dropdown item is clicked
     function closeDropdownAndNavbarOnClickDropdownItem() {
         if (navbarCollapse.classList.contains('show')) {
-            navbarToggler.click(); 
+            navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
         }
     }
 
+    // Attach click event listeners to the dropdown items
     const dropdownItems = document.querySelectorAll('.dropdown-item.nav-item');
     dropdownItems.forEach(function (dropdownItem) {
         dropdownItem.addEventListener('click', closeDropdownAndNavbarOnClickDropdownItem);
     });
+    
+    // Function to open the About Me dropdown when clicked
+    function openAboutMeDropdown() {
+        if (!aboutMeDropdown.classList.contains('show')) {
+            aboutMeDropdown.classList.add('show');
+        }
+    }
+
+    // Attach click event listener to the About Me dropdown
+    const aboutMeDropdownToggle = document.querySelector('.dropdown-toggle[role="button"]');
+    aboutMeDropdownToggle.addEventListener('click', openAboutMeDropdown);
 });
+
 
 </script>
 </body>
