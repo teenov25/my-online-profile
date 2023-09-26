@@ -237,10 +237,12 @@
 	</script>
 
 <script>
-   document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const navbarCollapse = document.querySelector('.navbar-collapse');
+    const aboutMeDropdown = document.querySelector('.dropdown-menu.bg-danger');
     const navItems = document.querySelectorAll('.nav-item');
     const navbarToggler = document.querySelector('.navbar-toggler');
+    const aboutMeDropdownToggle = document.querySelector('.nav-link.dropdown-toggle[role="button"]');
 
     // Function to close the navbar when clicking outside of it
     function closeNavbarOnClickOutside(event) {
@@ -263,7 +265,21 @@
     navItems.forEach(function (navItem) {
         navItem.addEventListener('click', closeNavbarOnClickNavItem);
     });
+
+    // Function to toggle the About Me dropdown and close the navbar
+    function toggleAboutMeDropdown() {
+        if (!aboutMeDropdown.classList.contains('show')) {
+            aboutMeDropdown.classList.add('show');
+        } else {
+            aboutMeDropdown.classList.remove('show');
+            navbarCollapse.classList.remove('show');
+        }
+    }
+
+    // Attach click event listener to the About Me dropdown toggle
+    aboutMeDropdownToggle.addEventListener('click', toggleAboutMeDropdown);
 });
+
 
 
 </script>
