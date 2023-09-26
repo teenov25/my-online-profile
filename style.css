@@ -180,12 +180,12 @@ section{
     }
 }
 @media screen and (max-width: 360px){
-    .head-container{
+    .header{
         min-height: 100vh;
     }
 }
 @media screen and (max-width: 320px){
-    .head-container{
+    .header{
         min-height: 100vh;
     }
 }
