@@ -9,6 +9,7 @@
 }
 html, body {
     scroll-behavior: smooth;
+    scroll-margin-top: 0;
 }
 
 /* header */
