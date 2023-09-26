@@ -90,7 +90,7 @@
 
 		<div id="about-me-2">
 			
-			<div class="flex-container">
+			<div class="flex-container item-grid">
 				<div class="item-1 card-body">
 					<img src="/my-online-profile/icons/school1.png" alt=" ">
 					<h2 class="card-title">Education</h2>
@@ -237,38 +237,46 @@
 	</script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const navbarCollapse = document.querySelector('.navbar-collapse');
+   document.addEventListener('DOMContentLoaded', function () {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const aboutMeDropdown = document.querySelector('.dropdown-menu.bg-danger');
+    const navItems = document.querySelectorAll('.nav-item');
+    const navbarToggler = document.querySelector('.navbar-toggler');
 
-        function closeNavbarOnClickOutside(event) {
-            if (navbarCollapse.classList.contains('show')) {
-              
-                const navbarToggler = document.querySelector('.navbar-toggler');
-                navbarToggler.click();
-            }
+    function closeNavbarOnClickOutside(event) {
+        if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click();
         }
+    }
 
-        document.addEventListener('click', closeNavbarOnClickOutside);
+    document.addEventListener('click', closeNavbarOnClickOutside);
 
-        const navItems = document.querySelectorAll('.nav-item');
-        function closeNavbarOnClickNavItem() {
-            if (navbarCollapse.classList.contains('show')) {
-                const navbarToggler = document.querySelector('.navbar-toggler');
-                navbarToggler.click(); 
-            }
+    function closeNavbarOnClickNavItem() {
+        if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click();
         }
-        navItems.forEach(function (navItem) {
-            navItem.addEventListener('click', closeNavbarOnClickNavItem);
-        });
-        const aboutMeDropdown = document.querySelector('.dropdown-menu.bg-danger');
-        aboutMeDropdown.addEventListener('click', function (e) {
-            e.stopPropagation();
-        });
+    }
+
+    navItems.forEach(function (navItem) {
+        navItem.addEventListener('click', closeNavbarOnClickNavItem);
     });
+
+    aboutMeDropdown.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+   
+    function closeDropdownAndNavbarOnClickDropdownItem() {
+        if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click(); 
+        }
+    }
+
+    const dropdownItems = document.querySelectorAll('.dropdown-item.nav-item');
+    dropdownItems.forEach(function (dropdownItem) {
+        dropdownItem.addEventListener('click', closeDropdownAndNavbarOnClickDropdownItem);
+    });
+});
+
 </script>
-
-
-
 </body>
-
 </html>
