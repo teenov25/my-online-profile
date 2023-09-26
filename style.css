@@ -128,7 +128,7 @@ section{
     padding: 30px;
     margin: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 10px;
     text-align: center;
