@@ -52,7 +52,7 @@
 	  </nav>
 
 	<section id="header">
-		<div class=" head-container">
+		<div class="head-container">
 			<div class="header-text">
 				<h1>
 					<span class="header-text-title-span">Web Developer <br></span> Hi,
@@ -240,38 +240,29 @@
     document.addEventListener('DOMContentLoaded', function () {
         const navbarCollapse = document.querySelector('.navbar-collapse');
 
-        // Function to close the navbar when clicking outside of it
         function closeNavbarOnClickOutside(event) {
             if (navbarCollapse.classList.contains('show')) {
-                // Check if the navbar is open and the click is outside
+              
                 const navbarToggler = document.querySelector('.navbar-toggler');
-                navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
+                navbarToggler.click();
             }
         }
 
-        // Attach a click event listener to the document to close the navbar on click outside
         document.addEventListener('click', closeNavbarOnClickOutside);
 
-        // Get all navigation items (including dropdown items)
         const navItems = document.querySelectorAll('.nav-item');
-
-        // Function to close the navbar when a navigation item is clicked
         function closeNavbarOnClickNavItem() {
             if (navbarCollapse.classList.contains('show')) {
                 const navbarToggler = document.querySelector('.navbar-toggler');
-                navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
+                navbarToggler.click(); 
             }
         }
-
-        // Attach click event listeners to all navigation items
         navItems.forEach(function (navItem) {
             navItem.addEventListener('click', closeNavbarOnClickNavItem);
         });
-
-        // Prevent the "About Me" dropdown from closing the navbar
         const aboutMeDropdown = document.querySelector('.dropdown-menu.bg-danger');
         aboutMeDropdown.addEventListener('click', function (e) {
-            e.stopPropagation(); // Prevent the click event from propagating to close the navbar
+            e.stopPropagation();
         });
     });
 </script>

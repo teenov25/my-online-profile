@@ -157,7 +157,6 @@ section{
     #about-me, #about-me-2, #skills{
         scroll-margin-top: 360px 
     }
-    
 }
 
 @media screen and (max-width: 400px) {
@@ -178,6 +177,16 @@ section{
     }
     .header-text h1 {
         font-size: 30px;
+    }
+}
+@media screen and (max-width: 360px){
+    .head-container{
+        min-height: 100vh;
+    }
+}
+@media screen and (max-width: 320px){
+    .head-container{
+        min-height: 100vh;
     }
 }
 
