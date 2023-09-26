@@ -1,290 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="../my-online-profile/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
 
-	<title>Profile Website</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="../my-online-profile/css/bootstrap.min.css" rel="stylesheet">
-	<script src="js/bootstrap.bundle.js"></script>
-</head>
+  <body class="bg-dark">
+    <nav
+      class="navbar sticky-top navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#header">
+          <img
+            src="/my-online-profile/images/logo2(4).png"
+            alt="Bootstrap"
+            width="120"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler bg-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto text-center mb-0 mb-lg-0 ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#header"
+                aria-current="page"
+                style="text-decoration: none"
+              >
+                Home</a
+              >
+            </li>
 
-<body class="bg-dark">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about-me"
+                style="text-decoration: none"
+              >
+                About Me
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about-me-2"
+                style="text-decoration: none"
+              >
+                Studies & Experience
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" style="text-decoration: none">
+                Skills
+              </a>
+            </li>
 
-	<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#header">
-				<img src="/my-online-profile/images/logo2(4).png" alt="Bootstrap" width="120" height="40">
-			  </a>
-		  <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto text-center mb-0 mb-lg-0">
-			  <li class="nav-item"><a class="nav-link active" href="#header" aria-current="page" style="text-decoration: none;" >
-			Home</a>
-			  </li>
-				
-				<li class="nav-item"><a class="nav-link" href="#about-me" style="text-decoration: none;">
-					About Me
-				  </a>
-			  </li>
-			  <li class="nav-item"><a class="nav-link" href="#about-me-2" style="text-decoration: none;">
-				Studies & Experience
-			  </a>
-		  </li>
-		  <li class="nav-item"><a class="nav-link" href="#skills" style="text-decoration: none;">
-			Skills
-		  </a>
-	  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile" style="text-decoration: none">
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="text-decoration: none">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-			 <li class="nav-item"> <a class="nav-link" href="#profile" style="text-decoration: none;">
-				Profile
-			  </a>
-			  </li>
-			  <li class="nav-item"><a class="nav-link" href="#contact" style="text-decoration: none;">
-				Contact
-			  </a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
+    <section id="header">
+      <div class="head-container">
+        <div class="header-text">
+          <h1>
+            <span class="header-text-title-span">Web Developer <br /></span> Hi,
+            I'm <span>Thandile</span><br />
+            from the Eastern Cape,<br />
+            South Africa.
+          </h1>
+        </div>
+      </div>
+    </section>
 
-	<section id="header">
-		<div class="head-container">
-			<div class="header-text">
-				<h1>
-					<span class="header-text-title-span">Web Developer <br></span> Hi,
-					I'm <span>Thandile</span><br>
-					from the Eastern Cape,<br>
-					South Africa.
-				</h1>
-			</div>
-		</div>
-	</section>
+    <section id="about-me">
+      <div class="about-me-container">
+        <div class="about-col-1">
+          <img src="images/img2.png" alt=" " />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            <br />
+            Welcome to my portfolio. My name is Thandile Malimela Novuka. I am a
+            front-end web developer based in Eastern Cape, Maluti. Having
+            studied Information Technology, I've gained extensive knowledge of
+            web development, web design, and the different processes that come
+            with it. I am currently a web development student at Umuzi Academy.
+            I'm eager to work on my first significant project. <br />
+            In addition to my love for web development and design, I am also
+            interested in music production, art, and bushcraft camping. <br />
+            Scroll down for more...
+          </p>
+          <a
+            class="btn btn-danger"
+            href="../my-online-profile/Documents/TN.pdf"
+            role="button"
+            target="_blank"
+            >Check out my CV</a
+          >
+        </div>
+      </div>
 
-	<section id="about-me">
-		<div class = "about-me-container">
-			<div class="about-col-1">
-				<img src="images/img2.png" alt=" ">
-			</div>
-			<div class="about-col-2">
-				<h1 class="sub-title">About Me</h1>
-				<p>
-					<br>
-					Welcome to my portfolio. My name is Thandile Malimela Novuka. I am a front-end web developer
-					based in Eastern Cape,
-					Maluti. Having studied Information Technology, I've gained extensive knowledge of web
-					development, web design, and the
-					different processes that come with it. I am currently a web development student at Umuzi
-					Academy. I'm eager to work on
-					my first significant project. <br>
-					In addition to my love for web development and design, I am also interested in music production,
-					art, and bushcraft camping. <br> Scroll down for more...
-				</p>
-				<a class="btn btn-danger" href="../my-online-profile/Documents/TN.pdf" role="button"
-					target="_blank">Check out my CV</a>
-			</div>
-		</div>
+      <div id="about-me-2">
+        <div class="flex-container item-grid">
+          <div class="item-1 card-body">
+            <img src="/my-online-profile/icons/school1.png" alt=" " />
+            <h2 class="card-title">Education</h2>
+            <h4 class="card-subtitle">
+              <span>Certifications 2022-current</span>
+            </h4>
+            <br />
+            Umuzi Academy <br />
+            <p>- Studying Currently</p>
+            <br />
+            <h4 class="card-subtitle"><span>Tertiary 2014- Ongoing</span></h4>
+            <br />Durban University of Technology <br />
+            <p>
+              - Not Complete <br />- Development Software, Information Systems,
+              System Software, Business Analysis, Financial Accounting,
+              Information Technology Skills.
+            </p>
+            <br />
+            <h4 class="card-subtitle"><span>Secondary 2009-2013</span></h4>
+            <br />
+            King Edward Highschool <br />
+            <p>
+              - Passed with Bachelor's Degree <br />- Mathematics, English Home
+              Language, Afrikaans First Additional Language, Physical Sciences,
+              Engineering Graphics, and Design, Geography, Life Orientation.
+            </p>
+          </div>
 
-		<div id="about-me-2">
-			
-			<div class="flex-container item-grid">
-				<div class="item-1 card-body">
-					<img src="/my-online-profile/icons/school1.png" alt=" ">
-					<h2 class="card-title">Education</h2>
-					<h4 class="card-subtitle"><span>Certifications 2022-current</span></h4><br>
-					Umuzi Academy <br>
-					<p>
-						- Studying Currently
-					</p>
-					<br>
-					<h4 class="card-subtitle"><span>Tertiary 2014- Ongoing</span></h4><br>Durban University of
-					Technology <br>
-					<p>
-						- Not Complete <br>- Development Software, Information
-						Systems, System Software, Business Analysis, Financial
-						Accounting, Information Technology Skills.
-					</p>
-					<br>
-					<h4 class="card-subtitle"><span>Secondary 2009-2013</span></h4><br>
-					King Edward Highschool <br>
-					<p>
-						- Passed with Bachelor's Degree <br>- Mathematics, English Home Language, Afrikaans First
-						Additional Language, Physical Sciences, Engineering Graphics, and
-						Design, Geography, Life Orientation.
-					</p>
-				</div>
+          <div class="item-2 card-body">
+            <img src="/my-online-profile/icons/working22.png" alt=" " />
+            <h2 class="card-title">Experience</h2>
+            <h4 class="card-subtitle">
+              <span
+                >Amasenti Amahle Enterprises Ltd Pty. <br />
+                June 2018 - June 2018</span
+              >
+            </h4>
+            <br />
+            <p>
+              Coordinating office activities and operations, managing agendas
+              and travel arrangements for upper management and managing data,
+              responding to calls and emails, and creating spreadsheets.
+            </p>
+            <br />
+            <h4 class="card-subtitle">
+              <span
+                >Customer Service and Sales Representative at CCI Umhlanga
+                <br />
+                September 2017 - April 2018</span
+              >
+            </h4>
+            <br />
+            <p>
+              Courteously answering inbound calls and responding to customer
+              queries, evaluating and providing logical solutions to customers'
+              issues, coordinating with technical and sales teams to ensure
+              timely delivery of services and/or products, and generating
+              customer interest in campaign services and products.
+            </p>
+          </div>
 
-				<div class="item-2 card-body">
-					<img src="/my-online-profile/icons/working22.png" alt=" ">
-					<h2 class="card-title">Experience</h2>
-					<h4 class="card-subtitle"><span>Amasenti Amahle Enterprises Ltd Pty. <br>
-							June 2018 - June 2018</span></h4>
-					<br>
-					<p> Coordinating office activities and operations, managing agendas and travel
-						arrangements
-						for upper management and
-						managing data, responding to calls and emails, and creating spreadsheets.
-					</p>
-					<br>
-					<h4 class="card-subtitle"><span>Customer Service and Sales Representative at CCI Umhlanga
-							<br>
-							September 2017 - April 2018</span></h4><br>
-					<p> Courteously answering inbound calls and
-						responding
-						to customer queries, evaluating and providing logical solutions to
-						customers' issues, coordinating with technical and sales teams to ensure timely delivery of
-						services and/or products,
-						and generating customer interest in campaign services and products.
-					</p>
-				</div>
-				
-					<div class="item-3 card-body">
-						<h2 class="h2-flex card-title" id="skills">Skills</h2>
-						<div class="skill-1" ><img src="/my-online-profile/icons/java-script.png" alt=" ">
-							<h6 class="card-subtitle">JavaScript</h6>
-						</div>
-						<div class="skill-2"><img src="/my-online-profile/icons/html-5.png" alt=" ">
-							<h6>Hypertext Markup Language</h6>
-						</div>
-						<div class="skill-3" ><img src="/my-online-profile/icons/css-3.png" alt=" ">
-							<h6 class="card-subtitle">Cascading <br> StyleSheet</h6>
-						</div>
-						<div class="skill-2"><img src="/my-online-profile/images/jasmine-logo.png" alt=" ">
-							<h6>Jasmine</h6>
-						</div>
-						<div class="skill-2"><img src="images/PostgreSQL_logo.3colors.120x120.png" alt=" ">
-							<h6>PostgresSQL</h6>
-						</div>
-						<div class="skill-2"><img src="/my-online-profile/images/nodejs-logo3.png " alt=" ">
-							<h6>Node.JS</h6>
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
+          <div class="item-3 card-body">
+            <h2 class="h2-flex card-title" id="skills">Skills</h2>
+            <div class="skill-1">
+              <img src="/my-online-profile/icons/java-script.png" alt=" " />
+              <h6 class="card-subtitle">JavaScript</h6>
+            </div>
+            <div class="skill-2">
+              <img src="/my-online-profile/icons/html-5.png" alt=" " />
+              <h6>Hypertext Markup Language</h6>
+            </div>
+            <div class="skill-3">
+              <img src="/my-online-profile/icons/css-3.png" alt=" " />
+              <h6 class="card-subtitle">
+                Cascading <br />
+                StyleSheet
+              </h6>
+            </div>
+            <div class="skill-2">
+              <img src="/my-online-profile/images/jasmine-logo.png" alt=" " />
+              <h6>Jasmine</h6>
+            </div>
+            <div class="skill-2">
+              <img src="images/PostgreSQL_logo.3colors.120x120.png" alt=" " />
+              <h6>PostgresSQL</h6>
+            </div>
+            <div class="skill-2">
+              <img src="/my-online-profile/images/nodejs-logo3.png " alt=" " />
+              <h6>Node.JS</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section id="profile">
+    <section id="profile">
+      <h1 class="sub-title profile-title">My Work</h1>
+      <div class="profile-row-list"></div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="contact-left header-text">
+        <h1 class="header-text">
+          Would you like to get in <span>touch</span> with me?
+        </h1>
+        <a
+          class="btn btn-danger"
+          href="../my-online-profile/Documents/TN.pdf"
+          role="button"
+          target="_blank"
+          >Check out my CV</a
+        >
+      </div>
+      <div class="contact-right">
+        <h2 class="sub-title sub-about">Contact Me</h2>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            id="phone"
+            placeholder="Your Mobile Number"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            placeholder="Enter Message here"
+          >
+          </textarea>
+          <button
+            type="submit"
+            class="btn btn-outline-light"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 4rem;
+              --bs-btn-font-size: 0.8rem;
+            "
+          >
+            Send
+          </button>
+        </form>
+        <p>
+          <img src="/my-online-profile/icons/email.png" alt=" " />
+          Thandilenovuka23@gmail.com
+        </p>
+        <p>
+          <img src="/my-online-profile/icons/phone-call.png" alt=" " /> 076 197
+          2***
+        </p>
+        <div class="media-icons">
+          <a
+            href="https://mobile.facebook.com/thandile.novuka.5"
+            target="_blank"
+            ><img src="/my-online-profile/icons/facebook(1).png" alt=" "
+          /></a>
+          <a href="https://www.instagram.com/thandilenovuka" target="_blank"
+            ><img src="/my-online-profile/icons/instagram.png" alt=" "
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/thandile-novuka-023aa8162"
+            target="_blank"
+            ><img src="/my-online-profile/icons/linkedin.png" alt=" "
+          /></a>
+          <a href="https://github.com/teenov25" target="_blank"
+            ><img src="/my-online-profile/icons/github.png" alt=" "
+          /></a>
+        </div>
+      </div>
+    </section>
 
-		<h1 class="sub-title profile-title">My Work</h1>
-		<div class="profile-row-list">
-		</div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken: "8f21b687-197a-4fa2-aada-6536f7300247",
+          To: "tobey.bookingsinfo@gmail.com",
+          From: "thandilenovuka23@gmail.com",
+          Subject: "New Contact Form Enquiry",
+          Body:
+            "Name :" +
+            document.getElementById("name").value +
+            "<br> Email :" +
+            document.getElementById("email").value +
+            "<br> Phone Number :" +
+            document.getElementById("phone").value +
+            "<br> Message :" +
+            document.getElementById("message").value,
+        }).then((message) => alert("Message Sent Succesfully"));
+      }
+    </script>
 
-	</section>
-	<section id="contact" class="contact">
-
-		
-			<div class="contact-left header-text">
-				<h1 class=" header-text">Would you like to get in <span>touch</span> with me?</h1>
-				<a class="btn btn-danger" href="../my-online-profile/Documents/TN.pdf" role="button"
-					target="_blank">Check out my CV</a>
-			</div>
-			<div class="contact-right">
-				<h2 class="sub-title sub-about">Contact Me</h2>
-				<form onsubmit="sendEmail(); reset(); return false;">
-					<input type="text" id="name" placeholder="Your Name" required>
-					<input type="email" id="email" placeholder="Your Email" required>
-					<input type="text" id="phone" placeholder="Your Mobile Number" required>
-					<textarea name="message" id="message" rows="5" placeholder="Enter Message here">
-							</textarea>
-					<button type="submit" class="btn btn-outline-light"
-						style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: .8rem;">Send</button>
-				</form>
-				<p>
-					<img src="/my-online-profile/icons/email.png" alt=" ">
-					Thandilenovuka23@gmail.com
-				</p>
-				<p>
-					<img src="/my-online-profile/icons/phone-call.png" alt=" "> 076
-					197 2***
-				</p>
-				<div class="media-icons">
-					<a href="https://mobile.facebook.com/thandile.novuka.5" target="_blank"><img
-							src="/my-online-profile/icons/facebook(1).png" alt=" "></a>
-					<a href="https://www.instagram.com/thandilenovuka" target="_blank"><img
-							src="/my-online-profile/icons/instagram.png" alt=" "></a>
-					<a href="https://www.linkedin.com/in/thandile-novuka-023aa8162" target="_blank"><img
-							src="/my-online-profile/icons/linkedin.png" alt=" "></a>
-					<a href="https://github.com/teenov25" target="_blank"><img src="/my-online-profile/icons/github.png"
-							alt=" "></a>
-				</div>
-			</div>
-		
-	</section>
-
-	
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script>
-		function sendEmail() {
-			Email.send({
-				SecureToken: "8f21b687-197a-4fa2-aada-6536f7300247",
-				To: "tobey.bookingsinfo@gmail.com",
-				From: "thandilenovuka23@gmail.com",
-				Subject: "New Contact Form Enquiry",
-				Body:
-					"Name :" +
-					document.getElementById("name").value +
-					"<br> Email :" +
-					document.getElementById("email").value +
-					"<br> Phone Number :" +
-					document.getElementById("phone").value +
-					"<br> Message :" +
-					document.getElementById("message").value,
-			}).then((message) => alert("Message Sent Succesfully"));
-		};
-	</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    const aboutMeDropdown = document.querySelector('.dropdown-menu.bg-danger');
-    const navItems = document.querySelectorAll('.nav-item');
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    const aboutMeDropdownToggle = document.querySelector('.nav-link.dropdown-toggle[role="button"]');
-
-    // Function to close the navbar when clicking outside of it
-    function closeNavbarOnClickOutside(event) {
-        if (navbarCollapse.classList.contains('show')) {
-            navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+        const aboutMeDropdown = document.querySelector(
+          ".dropdown-menu.bg-danger"
+        );
+        const navItems = document.querySelectorAll(".nav-item");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        
+        function closeNavbarOnClickOutside(event) {
+          if (navbarCollapse.classList.contains("show")) {
+            navbarToggler.click(); 
+          }
         }
-    }
 
-    // Attach a click event listener to the document to close the navbar on click outside
-    document.addEventListener('click', closeNavbarOnClickOutside);
+        document.addEventListener("click", closeNavbarOnClickOutside);
 
-    // Function to close the navbar when a navigation item is clicked
-    function closeNavbarOnClickNavItem() {
-        if (navbarCollapse.classList.contains('show')) {
-            navbarToggler.click(); // Close the navbar by simulating a click on the toggler button
+        function closeNavbarOnClickNavItem() {
+          if (navbarCollapse.classList.contains("show")) {
+            navbarToggler.click();
+          }
         }
-    }
 
-    // Attach click event listeners to all navigation items
-    navItems.forEach(function (navItem) {
-        navItem.addEventListener('click', closeNavbarOnClickNavItem);
-    });
-
-    // Function to toggle the About Me dropdown and close the navbar
-    function toggleAboutMeDropdown() {
-        if (!aboutMeDropdown.classList.contains('show')) {
-            aboutMeDropdown.classList.add('show');
-        } else {
-            aboutMeDropdown.classList.remove('show');
-            navbarCollapse.classList.remove('show');
-        }
-    }
-
-    // Attach click event listener to the About Me dropdown toggle
-    aboutMeDropdownToggle.addEventListener('click', toggleAboutMeDropdown);
-});
-
-
-
-</script>
-</body>
+        navItems.forEach(function (navItem) {
+          navItem.addEventListener("click", closeNavbarOnClickNavItem);
+        });
+      });
+    </script>
+  </body>
 </html>
