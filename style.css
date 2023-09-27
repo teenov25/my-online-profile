@@ -130,8 +130,8 @@ section{
 }
 
 .flex-container {
-    padding: 30px;
     text-align: center;
+    margin-right: 10px;
 }
 
 .flex-container div {
@@ -184,7 +184,11 @@ section{
     .header{
         min-height: 100vh;
     }
+    .item-grid .card_body{
+        padding: 5px;
+    }
 }
+
 @media screen and (max-width: 320px){
     .header{
         min-height: 100vh;
@@ -251,6 +255,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     color: #ababab;
+    justify-items: center; 
 }
 
 
