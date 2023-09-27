@@ -231,6 +231,7 @@ section{
     grid-column-start: 1;
     grid-column-end: -1;
     padding: 15px 10px;
+    color: #ababab;
 }
 
 .item-3 h6 {
