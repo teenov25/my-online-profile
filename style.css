@@ -108,7 +108,7 @@ section{
 }
 
 .about-col-2 {
-    padding: 0 20px 20px 20px;
+    padding: 10% 20px 20px 20px;
 }
 
 .about-col-2 p {
@@ -125,7 +125,6 @@ section{
     text-align: center;
 }
 
-/*----about me 2-----*/
 .flex-container {
     padding: 30px;
     margin: 30px;
@@ -256,8 +255,6 @@ section{
     text-decoration: underline;
 }
 
-/*------ contact ------*/
-
 .contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -356,7 +353,6 @@ form button {
     margin: 20px auto 0;
 }
 
-/*------profile-----*/
 #profile {
     padding: 0 20px;
 }
